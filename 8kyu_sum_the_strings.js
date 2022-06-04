@@ -15,10 +15,21 @@ Inputs and the expected output will never exceed the signed 32-bit integer limit
 
 */
 
-// SOLUITION
+// MY SOLUTION
 
 function sumStr(a,b) {
   if (a == '') a = 0;
   if (b == '') b = 0;
   return String(Number(a) + Number(b));
 }
+
+// SELECTED SOLUTIONS
+
+function sumStr(a,b) {                      // short and sweet, i guess i didn't need to convert the strings to zeros?
+    return String(Number(a)+Number(b));
+  }
+
+function sumStr(a,b) {                      // type coercion? 
+    return (+a+ +b)+''  
+  }
+
